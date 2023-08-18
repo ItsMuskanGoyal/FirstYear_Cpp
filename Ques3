@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main(){
+    string m;
+    cout << "enter string ";
+    getline(cin, m);
+    int hello = 0;
+    for (int i = 0; i < m.size(); i++)
+    {
+        hello = 0; // necessary
+        for (int j = 0; j < m.size(); j++)
+        {
+
+            if (j < i && m[i] == m[j])
+            {
+                break;
+            }
+            if (m[i] == m[j])
+            {
+                hello++;
+            }
+        }
+        if (hello != 0)
+        {
+            cout<<m[i]<<" Appears "<<hello<< " times" << endl;
+        }
+    }
+    return 0;
+}

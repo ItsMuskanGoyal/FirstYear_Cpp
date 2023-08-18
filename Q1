@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+class Customer{
+    char MobNum[10];
+    char Name[25];
+    char DOB[10];
+    char BillAdd[50];
+    char City[25];
+    char ResidenceNo[13];
+    
+
+public:
+float Amount;
+void input_data(){
+    cout<<"enter your Mobile No.";
+    cin>>MobNum;
+    cout<<"Name";
+    cin>>Name;
+    cout<<"DOB";
+    cin>>DOB;
+    cout<<"Bill Address:";
+    cin>>BillAdd;
+    cout<<"City";
+    c
+    
+    in>>City;
+    cout<<"Residence Number";
+    cin>>ResidenceNo;
+    cout<<"Enter Amount:";
+    cin>>Amount;
+}
+
+void outputData(){
+    cout<<"Mobile Number: "<<MobNum<<endl;
+    cout<<"Customer name:"<<Name<<endl;
+    cout<<DOB<<endl<<BillAdd<<City<<ResidenceNo<<endl<<Amount;
+}
+
+};
+
+int main()
+{
+    Customer c;
+    c.input_data();
+    c.outputData();
+
+    cout<<c.Amount;
+    return 0;
+}
